@@ -1,0 +1,92 @@
+section.contact_detail_section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.contcat_detail-card {
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 0 30px;
+    transition: all 0.5s;
+    border: 1px solid rgba(207, 217, 249, .5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contcat_detail_icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-bottom: 25px;
+    display: inline-block;
+    transition: all 0.5s ease-in;
+    border: 1px solid rgba(207, 217, 249, .5);
+}
+.contcat_detail_icon span{
+    font-size: 25px;
+    line-height: 80px;
+    text-align: center;
+    color: var(--bs-black);
+}
+
+.contact_detail_text h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 9px;
+    color: var(--bs-black);
+}
+
+.contact_detail_text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bs-black);
+}
+
+.contcat_detail-card:hover{
+  border-radius: 35px 0;
+  background-color: #001f31;
+}
+.contcat_detail-card:hover .contcat_detail_icon{
+    background-color: var(--bs-white);
+}
+.contcat_detail-card:hover .contcat_detail_icon span{
+    color:#001f31;
+}
+.contcat_detail-card:hover .contact_detail_text h3,
+.contcat_detail-card:hover .contact_detail_text p {
+    color: var(--bs-white);
+} 
+.contact_form-area{
+    padding-bottom: 50px;
+    position: relative;
+}
+.login_from-conatiner-in{
+    width: 100% !important;
+}
+.contcat_img{
+    border: 1px solid rgba(207, 217, 249, .5); 
+}
+.contcat_img img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+.contcat-form h3{
+    color: var(--bs-white);
+}
+textarea.login_form-control {
+    height: 225px;
+    border: unset;
+    width: 100%;
+    box-shadow: unset;
+    padding-left: 25px;
+    border-radius: 30px;
+    background-color: #f2f4fe;
+    outline: none;
+}

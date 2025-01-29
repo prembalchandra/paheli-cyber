@@ -1,0 +1,27 @@
+.privacy-policy_content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.privacy-policy_content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #001322;
+}
+
+.privacy-policy_content h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #001323;
+}
+
+.privacy_listing ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    list-style: auto;
+    margin-left: 23px  !important;
+    font-size: 18px;
+    font-weight: 500;
+}

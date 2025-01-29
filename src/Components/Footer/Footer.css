@@ -1,0 +1,125 @@
+footer.footer_area {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-top: 10%;
+}
+.footer_container {
+    display: flex;
+}
+
+.footer_main_content {
+    margin-bottom: 30px;
+}
+
+.footer_main_content img {
+    max-width: 200px;
+}
+.footer_listing_row {
+    margin-bottom: 30px;
+}
+.footer_main_content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: var(--bs-white);
+}
+.footer_listing_row h4 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 11px;
+    color: var(--bs-white);
+}
+.footer_listing_row ul{
+    margin-top: 20px !important;
+}
+.footer_listing_row ul li {
+    margin-bottom: 10px;
+}
+
+.footer_listing_row ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer_listing_row ul li a:hover {
+    color: #fff;
+}
+
+
+.newsletter-box {
+    background-color: #fff;
+    margin-bottom: -83px;
+    position: relative;
+    padding: 44px;
+    border-radius: 120px 120px;
+}
+.form-new-ltter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-new-ltter input {
+    margin-bottom: 0;
+}
+
+.form-new-ltter .login_form-btn button {
+    margin-top: 0;
+}
+
+.newsletter_conent span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--bs-icon);
+}
+
+.newsletter_conent h4 {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 12px 0 0;
+    color: #001f31;
+}
+.footer-bottom {
+    background-color: #092535;
+    padding: 15px 0 9px;
+    box-shadow: 0px 9px 17px #7f7c7d;
+}
+
+.footer-content h6 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bs-white);
+}
+.footer-content h6 a{
+    color: var(--bs-icon);
+}
+
+@media only screen and (max-width:991px) {
+    footer.footer_area {
+        padding-top: 15%;
+    }
+  }
+
+  @media only screen and (max-width:600px) {
+    footer.footer_area {
+        padding-top: 20%;
+    }
+    .newsletter-box{
+        border-radius: 0;
+        padding: 26px;
+    }
+    .newsletter-box .row{
+        gap: 20px;
+    }
+  }
+  @media only screen and (max-width:425px) {
+    footer.footer_area {
+        padding-top: 28%;
+    }
+  }

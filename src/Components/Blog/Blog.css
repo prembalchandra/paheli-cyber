@@ -1,0 +1,145 @@
+.blog-listing-area {
+  padding: 60px 0;
+}
+.common_heading {
+  margin-bottom: 47px;
+}
+
+.common_heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #001f31;
+  line-height: 42px;
+}
+
+.common_heading p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+  .blog-card {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.blog-card .blog-img {
+  position: relative;
+  border-radius: 0 30px;
+}
+
+.blog-card .blog-img:hover {
+  border-radius: 30px 0;
+}
+
+.blog-card .blog-img::after {
+  background-color: #0c0c0c65;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: rotate(0deg);
+  pointer-events: none;
+}
+
+.blog-card:hover .blog-img::after {
+  opacity: 1;
+  transform: rotate(180deg);
+  border-radius: 30px 0;
+  width: 100%;
+
+}
+
+.blog-card .blog-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 30px;
+  position: relative;
+}
+
+.blog-card:hover .blog-img img {
+  border-radius: 30px 0;
+}
+
+.blog-content {
+  padding: 11px 20px;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+}
+.meta-item {
+  margin-right: 15px;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  line-height: 28px;
+  margin: 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+  .read-more {
+    color: #042335;
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    justify-content: end;
+}
+
+.pagination .pagination-button {
+  margin: 0 5px;
+  border: 1px solid #001f31;
+  background: #001f31;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  color: var(--bs-white);
+}
+.pagination .pagination-button.active {
+  background: var(--bs-icon);
+  color: var(--bs-white);
+  border-color: var(--bs-icon);
+}
+.pagination .pagination-button :disabled {
+  background: var(--bs-icon);
+  cursor: not-allowed;
+}
+button.pagination_lift {
+  padding: 2px 8px;
+  background-color: #001f31;
+  border: none;
+  color: #fff;
+}
+@media only screen and (max-width:768px) {
+  .blog-listing-area {
+    padding: 30px 0 0;
+}
+section.projects-area{
+  padding: 30px 0 0;
+}
+section.testimonial_area{
+  padding: 30px 0 0;
+}
+}

@@ -1,0 +1,180 @@
+
+section.projects-area {
+   padding: 60px 0 0;
+    position: relative;
+}
+.projects-box-info .main-box {
+    padding: 0;
+    display: flex
+} 
+.projects-box-info .main-box .box {
+    background-image: url(../../assets/images/projects-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    width: 172px;
+    height: 350px;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    margin-right: 25px;
+    border-radius: 0 30px;
+}
+
+.projects-box-info .main-box .box:nth-child(2) {
+    background-image: url(../../assets/images/projects-2.jpg);
+}
+
+.projects-box-info .main-box .box:nth-child(3) {
+    background-image: url(../../assets/images/projects-3.jpg);
+}
+
+.projects-box-info .main-box .box:nth-child(4) {
+    background-image: url(../../assets/images/projects-4.jpg);
+}
+
+.projects-box-info .main-box .box:nth-child(5)  {
+    background-image: url(../../assets/images/projectsimg.jpg);
+}
+.projects-box-info .main-box .box .detail {
+    right: 0;
+    top: 0;
+    opacity: 0;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-transition: .8s;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: var(--transition);
+    -webkit-transform: translateY(100%)
+}
+
+.projects-box-info .main-box .box .detail .content {
+    padding-top: 158px
+}
+
+.projects-box-info .main-box .box .detail .content h3 {
+    font-size: 20px
+}
+
+.projects-box-info .main-box .box .detail .content h3 a {
+    color: var(--bs-white)
+}
+
+.projects-box-info .main-box .box .detail .content h3 a:hover {
+    color: var(--bs-white)
+}
+
+.projects-box-info .main-box .box .detail .content p {
+    color: #dae0f5
+}
+
+.projects-box-info .main-box .box .detail .content .read-more {
+    position: relative;
+    color: var(--bs-white);
+    transition: .5s;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.projects-box-info .main-box .box .detail .content .read-more i {
+    top: 1px;
+    font-size: 17px;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    transform: rotate(304deg);
+    color: var(--bs-white);
+    transition: .5s
+}
+
+.projects-box-info .main-box .box .detail .content .read-more:hover {
+    color: var(--bs-white);
+}
+
+.projects-box-info .main-box .box .detail .content .read-more:hover i {
+    transform: unset;
+    color: var(--bs-white);
+}
+
+.projects-box-info .main-box .box .detail .content .read-more:hover:before {
+    width: 100%
+}
+
+.projects-box-info .main-box .box span {
+    font-size: 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 172px;
+    transform: rotate(180deg);
+    font-weight: 400;
+    cursor: pointer
+}
+
+.projects-box-info .main-box .box span img {
+    border-radius: 0 30px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.projects-box-info .main-box .box.active {
+    width: 70%!important
+}
+
+.projects-box-info .main-box .box.active .detail {
+    opacity: 1;
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+    transform: none
+}
+
+.projects-box-info .main-box .box.active span {
+    display: none
+}
+
+.projects-box-info .main-box .box:last-child {
+    margin-right: 0
+}
+
+.projects-box-info .main-box .box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0 30px;
+    background: linear-gradient(180deg,#2e324100,#0c0b0bd9 56.29%)
+}
+
+
+@media only screen and (max-width:991px) {
+    .projects-box-info .main-box .box.active .detail {
+        opacity: 2 !important;
+    }
+    .projects-box-info .main-box{
+        flex-wrap: wrap;
+    }
+    .projects-box-info .main-box .box{
+        width: 100% !important;
+      margin-right: 0 !important;
+      margin-bottom: 20px;
+    }
+    .projects-box-info .main-box .box.active{
+        width: 100% !important;
+        opacity: 1 !important;
+    }
+}
+
